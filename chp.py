@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import datetime
-
+import csv
 # prepare driver
 driver = webdriver.Chrome('/Users/macuser/Downloads/chromedriver')
 #driver.fullscreen_window()
@@ -40,12 +40,9 @@ num_items = len(prices)
 
 print("There are " + str(num_items) + " available parking")
 for i in range(num_items):
-    print(str(i+1) + ')' + '\n' + transInfo[i].text + '\n' + prices[i].text + '\n' )
+    print(str(i+1) + ')' + '' + transInfo[i].text + ',' + prices[i].text + '\n')
 
 driver.quit()
-
-# just for check pull 
-
 
 
 

@@ -44,6 +44,7 @@ for i in range(num_items):
 
 driver.quit()
 
+# just check pull
 
 
 
